@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coding Quiz</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <div>
+            <button class = "button" id = "viewHighScores">View Highscores</button>
+        </div>
+        <div>
+            <p id = "timer">Time: 75</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+        <div>
+            <section id = "homepage">
+                <div>
+                    <h1>
+                        Coding Quiz Challenge
+                    </h1>
+                    <p>
+                        The faster you can answer each question the higher your score! 
+                        Be careful you'll lose 20 seconds for each wrong answer.
+                    </p>
+                    <button class = "button" id = "start">Start Quiz</button>
+                </div>
+            </section>
+
+            <section id = "questionList">
+                <div>
+                    <h2 id = "nextQuestion">Question</h2>
+                    <ul>
+                        <li><button class = "questionB any" id = "answer1">Answer1</button></li>
+                        <li><button class = "questionB any" id = "answer2">Answer2</button></li>
+                        <li><button class = "questionB any" id = "answer3">Answer3</button></li>
+                        <li><button class = "questionB any" id = "answer4">Answer4</button></li>
+                    </ul>
+                </div>
+                <div id = "rightOrWrong">
+
+                </div>
+            </section>
+
+            <section id = "scoreBox">
+                <div>
+                    <h2 id = "gameOver">All Done!</h2>
+                    <p id= "myScore">Your final score is: </p>
+                    <p>
+                        Enter initials: 
+                        <input id = "initials">
+                        <button id = "submitScore">Submit</button>
+                    </p>
+                </div>
+            </section>
+
+            <section id = "highScoresList">
+                <div>
+                    <h2>High Scores</h2>
+                    <div>
+                        <ol id ="highScores"></ol>
+                    </div>
+                    <br>
+                    <br>
+                    <div>
+                        <button id = "goBack">Go back</button>
+                        <button id = "reset">Clear Highscores</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
